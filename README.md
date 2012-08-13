@@ -1,4 +1,5 @@
-xorcode-jekyll-bootstrap-theme
+Xorcode Jekyll-Bootstrap Theme
 ==============================
 
-Xorcode Jekyll-Bootstrap theme
+The [Jekyll-Bootstrap](http://jekyllbootstrap.com/) theme that powers [xorcode.com](http://xorcode.com/).
+
