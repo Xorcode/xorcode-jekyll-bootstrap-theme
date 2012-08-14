@@ -42,13 +42,15 @@
       {{ content }}
 
       <footer>
-        <p>Copyright &copy; 2003-{{ Time.new.year }} {{ site.author.name }}. All rights reserved.
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+        <p>Copyright &copy; 2003-2012 {{ site.author.name }}. All rights reserved.
+          With help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>.
         </p>
       </footer>
     </div>
 
     {% include JB/analytics %}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="{{ ASSET_PATH }}/js/bootstrap.min.js"></script>
   </body>
 </html>
