@@ -1,9 +1,9 @@
 <div class="page-header">
-  <h1>{{ page.title }} <small>Supporting tagline</small></h1>
+  <h1>{{ page.title }} <small>{{ page.categories }}</small></h1>
 </div>
 
 <div class="content">
-  <div class="row">
+  <div class="row-fluid">
     <div class="span8">
       {{ content }}
       <hr>
@@ -29,20 +29,22 @@
     <div class="span4">
       <h4>Published</h4>
       <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
+      {% unless page.tags == empty %}
+        <h4>Tags</h4>
+        <ul class="tag_box">
+        {% assign tags_list = page.tags %}
+        {% include JB/tags_list %}
+        </ul>
+      {% endunless %}
 
-    {% unless page.tags == empty %}
-      <h4>Tags</h4>
-      <ul class="tag_box">
-      {% assign tags_list = page.tags %}
-      {% include JB/tags_list %}
-      </ul>
-    <h4>Related Posts</h4>
-      <ul>
-    {% for post in site.related_posts limit:10 %}
+      {% unless site.related_posts == empty %}
+        <h4>Related Posts</h4>
+        <ul>
+          {% for post in site.related_posts limit:10 %}
           <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-      </ul>
-    {% endunless %}
+          {% endfor %}
+        </ul>
+      {% endunless %}
     </div>
   </div>
 </div>

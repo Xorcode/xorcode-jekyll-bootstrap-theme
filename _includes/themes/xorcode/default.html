@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
-    <link href="{{ ASSET_PATH }}/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="{{ ASSET_PATH }}/css/syntax.css" rel="stylesheet" type="text/css" media="all">
-  <style type="text/css">
+    <style type="text/css">
       body {
         padding-top: 60px;
         padding-bottom: 40px;
       }
-  </style>
+    </style>
+	<link href="http://fonts.googleapis.com/css?family=Alfa+Slab+One|Sarina" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ ASSET_PATH }}/css/syntax.css" rel="stylesheet" type="text/css" media="all">
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -22,23 +23,25 @@
   <body>
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="container-fluid">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-          </ul>
+          <div class="nav-collapse">
+            <ul class="nav">
+              {% assign pages_list = site.pages %}
+              {% assign group = 'navigation' %}
+              {% include JB/pages_list %}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
       {{ content }}
 
       <footer>
@@ -50,7 +53,7 @@
     </div>
 
     {% include JB/analytics %}
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script src="{{ ASSET_PATH }}/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/bootstrap.min.js"></script>
   </body>
 </html>

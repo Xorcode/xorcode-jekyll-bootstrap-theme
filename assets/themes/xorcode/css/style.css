@@ -1,15 +1,38 @@
-.content .row blockquote img {
+.hero-unit {
+	padding: 50px;
+}
+
+.hero-unit h1, .hero-unit h2 {
+	font-family: 'Alfa Slab One', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	margin-bottom: .3em;
+}
+
+.page-header h1, .posts h2 {
+	font-family: 'Alfa Slab One', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+
+.page-header h1 small, .posts h2 small {
+	font-family: Sarina, cursive;
+	font-weight: 400;
+}
+
+.content .row blockquote img, .content .row-fluid blockquote img {
 	float: right;
+	padding-bottom: 1em;
+	padding-left: 1em;
 }
 
 .tag_box {
-	list-style:none;
-	margin:0;
-	padding:5px 0 ;
-	overflow:hidden;
+	list-style: none;
+	margin: 0;
+	padding: 5px 0;
+	overflow: hidden;
 }
 .tag_box li {
-	line-height:28px;
+	line-height: 28px;
+	float: left;
 }
 .tag_box.inline li {
 	float:left;
