@@ -1,5 +1,6 @@
 .hero-unit {
 	padding: 50px;
+	margin-bottom: 10px;
 }
 
 .hero-unit h1, .hero-unit h2 {
@@ -8,7 +9,7 @@
 	margin-bottom: .3em;
 }
 
-.page-header h1, .posts h2 {
+.page-header h1, .posts h2, .services h3 {
 	font-family: 'Alfa Slab One', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 400;
 }
@@ -22,6 +23,18 @@
 	float: right;
 	padding-bottom: 1em;
 	padding-left: 1em;
+}
+
+.row-fluid>div {
+	margin-bottom: 20px;
+}
+
+.posts ul.nav.nav-list {
+	margin-bottom: .6em;
+}
+
+footer {
+	margin-top: 20px;
 }
 
 .tag_box {
@@ -55,6 +68,92 @@
 	color:#FFF;
 }
 
-footer {
-	margin-top: 20px;
+.posts .tag_box {
+	padding: 0;
+	margin-top: -4px;
+	margin-bottom: 12px;
+}
+
+.content.post .tag_box {
+	margin-top: 0;
+}
+
+.content.post h1, .content.post h2, .content.post h3, .content.post h4, .content.post h5 {
+	margin-top: .3em;
+	margin-bottom: .6em;
+}
+
+.content.post .span8 p, .content.post .span8 ul, .content.post .span8 ol {
+	font-size: 1.25em;
+	line-height: 1.5em;
+	margin-bottom: .8em;
+}
+
+.content.post .span8 ul li, .content.post .span8 ol li {
+	line-height: 1.5em;
+}
+
+.content.post div.highlight {
+	margin-bottom: .9em;
+}
+
+.content.post .span4 .tag_box {
+	margin-top: -.8em;
+}
+
+.content.post .span8 blockquote p {
+	font-style: italic;
+	font-size: 1.5em;
+}
+
+.services h3 {
+	background-color: #ddd;
+	padding: 7px 15px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	margin: 0;
+}
+
+.content.post .services h3 {
+	margin: 0;
+}
+
+.services h3.php {
+	background-color: #A22;
+	color: #fff;
+}
+
+.services h3.android {
+	background-color: #949;
+	color: #fff;
+}
+
+.services h3.quality {
+	background-color: #069;
+	color: #fff;
+}
+
+.services h3.security {
+	background-color: #282;
+	color: #fff;
+}
+
+.services small {
+	background-color: #222;
+	color: #888;
+	padding: 9px 15px;
+	margin: 0;
+	display: block;
+}
+
+.services>div>div {
+	background-color: #ddd;
+	color: #000;
+	padding: 7px 15px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.services ul {
+	margin-top: 6px;
 }
