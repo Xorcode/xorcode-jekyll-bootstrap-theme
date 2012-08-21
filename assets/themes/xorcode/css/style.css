@@ -91,7 +91,7 @@ footer {
   border-radius: 3px;
   text-decoration:none;
 }
-.tag_box a span{
+.tag_box a small {
   vertical-align:super;
   font-size:0.8em;
 }
