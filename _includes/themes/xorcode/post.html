@@ -1,3 +1,11 @@
+<div class="subnav">
+  <ul class="nav nav-pills">
+    {% assign pages_list = site.pages %}
+    {% assign group = 'categories' %}
+    {% include JB/pages_list %}
+  </ul>
+</div>
+
 <div class="page-header">
   <h1>{{ page.title }} <small>{{ page.categories[0] }}</small></h1>
 </div>
