@@ -112,8 +112,8 @@ footer {
 }
 
 .content.post h1, .content.post h2, .content.post h3, .content.post h4, .content.post h5 {
-  margin-top: .3em;
-  margin-bottom: .6em;
+  margin-top: .6em;
+  margin-bottom: .7em;
 }
 
 .content.post .span8 p, .content.post .span8 ul, .content.post .span8 ol {
